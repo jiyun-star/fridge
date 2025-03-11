@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "name": "치킨 요리",
+      "ingredients": ["chicken", "garlic", "pepper"],
+      "instructions": "치킨을 굽고 마늘과 후추로 간을 맞춘다.",
+      "image": "chicken.jpg"
+    },
+    {
+      "id": 2,
+      "name": "감자 볶음",
+      "ingredients": ["potato", "onion", "oil"],
+      "instructions": "감자를 썰어 양파와 함께 볶는다.",
+      "image": "potato.jpg"
+    },
+    {
+      "name": "Omelette",
+      "ingredients": ["egg", "milk", "cheese"]
+    },
+    {
+      "name": "Salad",
+      "ingredients": ["lettuce", "tomato", "cucumber"]
+    },
+    {
+      "name": "pot egg cucum",
+      "ingredients": ["potato", "egg", "cucumber"]
+    }
+  ]
+  
