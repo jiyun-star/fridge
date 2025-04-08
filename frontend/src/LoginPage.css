@@ -1,0 +1,86 @@
+/* 기본 스타일 */
+body {
+    background-color: #f0f8f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 냉장고 아이콘 */
+  .fridge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fridge-icon {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fridge-container:hover .fridge-icon {
+    transform: scale(1.05); /* 마우스를 올리면 약간 커짐 */
+  }
+  
+  /* 로그인 폼 애니메이션 */
+  .login-form-container {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  
+  .login-form-container.transition-all {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* 로그인 폼 기본 스타일 */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-form {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-form input,
+  .login-form button {
+    width: 100%;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .login-form button {
+    background-color: #34D399;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .login-form button:hover {
+    background-color: #2cb179;
+  }
+  
+  .login-form input:focus {
+    border-color: #34D399;
+    outline: none;
+  }
+  

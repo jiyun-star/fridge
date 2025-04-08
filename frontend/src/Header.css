@@ -1,0 +1,56 @@
+/* 헤더 스타일링 */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #34D399; /* 초록색 배경 */
+    padding: 20px 30px; /* 패딩을 조금 더 추가하여 크기를 키움 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    width: 100%; /* 헤더가 페이지 전체 너비를 차지하게 */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;  /* 왼쪽 정렬 */
+    gap: 20px; /* 메뉴 간격 */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .nav-links a:hover {
+    background-color: white;
+    color: #34D399;
+    transition: background-color 0.3s;
+  }
+  
+  /* 본문 내용 여백 설정 */
+  .main-content {
+    margin-top: 80px; /* 헤더의 높이에 맞게 여백을 추가 */
+    padding: 20px;
+  }
+  
