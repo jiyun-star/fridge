@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import HomePage from "./HomePage";
 import RecipePage from "./RecipePage";
 import LoginPage from "./LoginPage";
-import Header from './Header';  // 헤더 컴포넌트 import
+import AboutPage from './AboutPage';
+import PrivacyPage from './PrivacyPage';
+import HistoryPage from './HistoryPage';
+import Header from './Header';
+import SignUpPage from './SignUpPage';
 
 function App() {
   const [ingredients, setIngredients] = useState([]); // 재료 상태 관리
@@ -23,6 +27,12 @@ function App() {
           />
           <Route path="/recipes" element={<RecipePage ingredients={ingredients} />} />
           <Route path="/login" element={<LoginPage setUser={setUser} />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+
+
         </Routes>
       </div>
     </Router>

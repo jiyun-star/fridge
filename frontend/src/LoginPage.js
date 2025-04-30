@@ -23,6 +23,9 @@ function LoginPage({ setUser }) {
   const handleOpenLogin = () => {
     setIsLoginOpen(true); // 로그인 폼 열기
   };
+  const handleGoToSignUp = () => {
+    navigate('/signup'); // 회원가입 페이지로 이동
+  };
 
   return (
     <div className="login-container bg-green-50 min-h-screen flex flex-col items-center justify-center">
@@ -50,6 +53,7 @@ function LoginPage({ setUser }) {
               className="w-full p-2 border rounded-md mb-2"
               required
             />
+            <br></br>
             <input
               type="password"
               value={password}
@@ -57,7 +61,7 @@ function LoginPage({ setUser }) {
               placeholder="Password"
               className="w-full p-2 border rounded-md mb-4"
               required
-            />
+            /><br></br>
             <button
               type="submit"
               className="w-full bg-green-500 text-white p-2 rounded-md hover:bg-green-600"
@@ -65,6 +69,18 @@ function LoginPage({ setUser }) {
               Login
             </button>
           </form>
+
+          <div className="signup-link-container mt-4">
+            <p className="text-center text-gray-700">
+              Don't have an account? <br></br>
+              <button 
+                onClick={handleGoToSignUp} 
+                className="text-green-500 underline ml-2"
+              >
+                Sign up
+              </button>
+            </p>
+          </div>
         </div>
       )}
     </div>
@@ -72,3 +88,5 @@ function LoginPage({ setUser }) {
 }
 
 export default LoginPage;
+
+
